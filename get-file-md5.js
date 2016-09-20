@@ -1,8 +1,8 @@
-const content = document.getElementById('content');
+const content = document.querySelector('#content');
 const SAMPLESIZE = 200;
 const CHUNKNUM = 5;
 
-document.getElementById('file').addEventListener('change', handleChange, false);
+document.querySelector('#file').addEventListener('change', handleChange, false);
 
 function handleChange (e) {
 	let file = e.target.files[0];
