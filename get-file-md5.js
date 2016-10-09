@@ -24,8 +24,8 @@ function readBigFile (file) {
   let read = () => {
   	let start = chunkSize * count;
   	let end = start + SAMPLESIZE;
-  	let blob = file.slice(start, end);
-  	reader.readAsText(blob);
+  	let sample = file.slice(start, end);
+  	reader.readAsText(sample);
   };
 
   reader.onload = (e) => {
